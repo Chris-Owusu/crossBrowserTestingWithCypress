@@ -1,0 +1,20 @@
+{
+  "name": "continue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cy:run_spec": "npx cypress run --headed --spec .", 
+    "cy:run_browser": "npm run cy:run_spec -- --browser chrome && npm run cy:run_spec -- --browser firefox && npm run cy:run_spec -- --browser electron && npm run cy:run_spec -- --browser edge"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.5.1"
+  },
+  "devDependencies": {
+    "cypress-file-upload": "^5.0.8",
+    "npm-run-all": "^4.1.5"
+  }
+}
